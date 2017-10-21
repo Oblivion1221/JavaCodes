@@ -1,3 +1,7 @@
+// Yaoxian Yang
+// COSC 211 Programming Assignment #4
+// Fall 2017: 12:00 ~ 13:50 Tue, Thu
+
 import java.util.Scanner;
 
 public class Program4 {
