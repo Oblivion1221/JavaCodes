@@ -42,7 +42,7 @@ public class Program4 {
             } catch (TimeFormatException e1) {
                 keyboard.nextLine();
                 System.out.println(e1.getMessage());
-            } catch (Exception e3) {
+            } catch (Exception e2) {
                 keyboard.nextLine();
                 System.out.println("Please enter the time in the format of (int)hr:(int)min\n\nTry again:");
             }
