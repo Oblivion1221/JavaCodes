@@ -84,5 +84,7 @@
 
 
     * If the elements in the array are objects, they must implement `Serializable`.
+    * Casting required.
     * `writeObject(<Array>)` <=> `(<Array>) <obj>.readObject()`
 
+* `RandomAccessFile` Class (P668)
