@@ -51,5 +51,6 @@ public class Program4 {
                 System.out.println("Please enter the time in the format of (int)hr:(int)min\n\nTry again:");
             }
         }
+        keyboard.close();
     }
 }
