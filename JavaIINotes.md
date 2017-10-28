@@ -39,7 +39,7 @@
 
     * The method `readLine()` of the class BufferedReader returns *null* when it tries to read beyond the end of a text file. 
 
-    * The method `read()` of the class BufferedReader returns -1 when it tries to read beyond the end of a text file.	
+      * The method `read()` of the class BufferedReader returns -1 when it tries to read beyond the end of a text file.
 
 
 
@@ -71,14 +71,15 @@
 
   * To write string to a binary file:
 
-
     * `writeObject(<String>)` <=> `(String) <obj>.readObject()`
     * `writeUTF("xxx")`: Efficient with a large string <=> `readUTF("xxx")`
 
+
   * `Serializable` Interface: 
 
-
     * A class that implements the Serializable interface is said to be a serializable class. To use objects of a class with writeObject and readObject, that class must be serializable. (P663)
+
+
 
   * Array objects in binary files:
 
@@ -86,5 +87,6 @@
     * If the elements in the array are objects, they must implement `Serializable`.
     * Casting required.
     * `writeObject(<Array>)` <=> `(<Array>) <obj>.readObject()`
+
 
 * `RandomAccessFile` Class (P668)
