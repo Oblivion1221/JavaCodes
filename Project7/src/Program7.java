@@ -4,7 +4,7 @@
 // A method that counts the frequency of
 // occurrence of a digit in an int number
 
-public class Program6 {
+public class Program7 {
     public static void main(String[] args) {
         System.out.println(frequencyCount(1342457, 4));
         System.out.println(frequencyCount(1342457, 9));
