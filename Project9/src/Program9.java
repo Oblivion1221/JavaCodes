@@ -7,7 +7,8 @@ public class Program9 {
 
         int op = -1;
         while (op != 0) {
-            System.out.println("Available Operations: ");
+            System.out.println("----------------- MENU -----------------");
+            System.out.println("Available Singly LinkedList Operations: ");
             System.out.println("0.  Quit the program");
             System.out.println("1.  Insert a number at the beginning of a list");
             System.out.println("2.  Insert a number at the end of a list");
@@ -15,6 +16,7 @@ public class Program9 {
             System.out.println("4.  Search the list for a specific number(for membership)");
             System.out.println("5.  Delete a node containing a specific number from the list");
             System.out.println("6.  Print the list");
+            System.out.println("----------------------------------------");
 
             op = keyboard.nextInt();
 
