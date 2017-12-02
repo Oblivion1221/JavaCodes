@@ -62,8 +62,10 @@ class LinkedList {
     void delete(int n) {
         Node pos = head;
         while (this.contains(n) && pos != null) {
-            if (pos.link == null)
+            if (pos.link == null) {
                 pos = null;
+                head = null;
+            }
             else if (pos.link.item == n)
                 pos.link = pos.link.link;
             else
@@ -78,6 +80,5 @@ class LinkedList {
             System.out.print(pos.item + " ");
             pos = pos.link;
         }
-        System.out.println();
     }
 }
