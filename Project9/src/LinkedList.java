@@ -24,17 +24,18 @@ class LinkedList {
         } else {
             head = new Node(item, head);
         }
+        System.out.println(item + " is added successfully");
     }
 
     void addToEnd(int item) {
-        Node tmp = new Node(item, null);
-        if (tail == null) {
-            tail = tmp;
-            head = tail;
+        if (head == null) {
+            head = new Node(item, null);
+            tail = head;
         } else {
-            tail.link = tmp;
+            tail.link = new Node(item, null);
             tail = tail.link;
         }
+        System.out.println(item + " is added successfully");
     }
 
     void printLength() {
@@ -60,17 +61,21 @@ class LinkedList {
     }
 
     void delete(int n) {
+        if (head.item == n) {
+            head = head.link;
+        }
         Node pos = head;
         while (this.contains(n) && pos != null) {
-            if (pos.link == null) {
+            if (pos.link == null)
                 pos = null;
-                head = null;
-            }
-            else if (pos.link.item == n)
+            else if (pos.link.item == n) {
                 pos.link = pos.link.link;
+                break;
+            }
             else
                 pos = pos.link;
         }
+        System.out.println(n + " is deleted successfully");
     }
 
     void printList() {
@@ -80,5 +85,6 @@ class LinkedList {
             System.out.print(pos.item + " ");
             pos = pos.link;
         }
+        System.out.println();
     }
 }

@@ -1,3 +1,9 @@
+// Yaoxian Yang
+// COSC 211 Programming Assignment
+// Lab #9
+// Fall 2017: 12:00 ~ 13:50 Tue, Thu
+// This program offers some operations of singly linked list
+
 import java.util.Scanner;
 
 public class Program9 {
@@ -54,6 +60,9 @@ public class Program9 {
                 case 6:
                     L.printList();
                     break;
+                default:
+                    if (op != 0)
+                        System.out.println("Operation unavailable");
             }
         }
     }
