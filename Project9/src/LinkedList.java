@@ -10,17 +10,14 @@ class LinkedList {
     }
 
     private Node head;
-    private Node tail;
 
     LinkedList() {
         head = null;
-        tail = null;
     }
 
     void addToStart(int item) {
         if (head == null) {
             head = new Node(item, null);
-            tail = head;
         } else {
             head = new Node(item, head);
         }
@@ -30,10 +27,12 @@ class LinkedList {
     void addToEnd(int item) {
         if (head == null) {
             head = new Node(item, null);
-            tail = head;
         } else {
-            tail.link = new Node(item, null);
-            tail = tail.link;
+            Node pos = head;
+            while (pos.link != null) {
+                pos = pos.link;
+            }
+            pos.link = new Node(item, null);
         }
         System.out.println(item + " is added successfully");
     }
