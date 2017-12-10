@@ -1,4 +1,5 @@
 ```java
+// insertBefore()
 if (head == null)
     return new String(m + " not found");
 else {
@@ -16,4 +17,24 @@ else {
     }
     return new String(m + " not found");
 }
+```
+
+```java
+// delete()
+if (head != null && head.getData() == x) {
+    head = head.getNext();
+    return new String("deleted " + x);
+}
+Node pos = head;
+while (pos != null) {
+    if (pos.getNext() == null) 
+        pos = null;
+    else if (pos.getNext().getData() == x) {
+        pos.putNext(pos.getNext().getNext()); 
+        return new String("deleted " + x);
+    }
+    else 
+        pos = pos.getNext();
+}
+return new String("Not found");
 ```
